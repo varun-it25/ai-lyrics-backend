@@ -13,7 +13,7 @@ const port = 5000;
 app.use(express.json());
 app.use(cors());
 
-app.get('/gemini', async (req, res) => {
+app.get('/gemin', async (req, res) => {
   const { word } = req.query;
   const result =  await callGeminiAPI(word);
 
